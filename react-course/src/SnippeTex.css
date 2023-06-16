@@ -1,0 +1,33 @@
+#button1{
+    background-color: red;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 10px;
+    width: 100px;
+    
+}
+#button2{
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 100px;
+}
+#button3{
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 100px;
+}
+#button4{
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 100px;
+}
+
+#a{
+    color: red;
+}
