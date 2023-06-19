@@ -1,0 +1,18 @@
+.topNav{
+    display: flex;
+    align-content: center;
+    padding: 3px;
+    padding-left: 900px;
+    
+}
+
+#toplabel1{
+    background-color: skyblue;
+    padding: 3px;
+}
+#toplabel2{
+   
+    background-color: black;
+    color: white;
+    padding: 3px;
+}
