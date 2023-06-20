@@ -3,6 +3,13 @@ import React, { useState } from 'react'
 function IncDec() {
     
     const [first, setfirst] = useState(0)
+    const add = ()=>{setfirst(()=>first+1)
+        // setfirst(()=>first+1)
+        // setfirst(oldvalue=>oldvalue+1)
+        // setfirst(oldvalue=>oldvalue+1)
+        console.log("exe")
+
+    }
     const dec=()=>{
         if(first<=0)
         {
@@ -15,7 +22,7 @@ function IncDec() {
   return (
     <div>
         <h1> The Value is {first}</h1>
-        <button onClick={()=>setfirst(first+1)}>Add Value</button>
+        <button onClick={add}>Add Value</button>
         <button onClick={dec}>Dec Value</button>
     </div>
   )
