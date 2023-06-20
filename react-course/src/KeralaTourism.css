@@ -1,18 +1,33 @@
 .topNav{
     display: flex;
-    align-content: center;
+    justify-content: right;
     padding: 3px;
-    padding-left: 900px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    height: 30px;
+
+
     
 }
 
 #toplabel1{
     background-color: skyblue;
-    padding: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+   
 }
 #toplabel2{
    
     background-color: black;
     color: white;
-    padding: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+  
+}
+
+.navfond{
+    color: white;
+    font-size: 10px;
 }
