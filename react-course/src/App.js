@@ -6,17 +6,20 @@ import IncDec from './IncDec';
 import ArrayMap from './ArrayMap';
 import SnippetTex from './SnippetTex';
 import SnippTask2 from './SnippTask2';
+import IncDec2 from './IncDec2';
+
 
 
 
 function App() {
   return (
     <div className="App">
-      <SnippTask2/>
-      <SnippetTex/>
-      {/* <ArrayMap/>
-      <IncDec/>
-    <RecatHook/>
+      <IncDec2/>
+      {/* <SnippTask2/>
+      <SnippetTex/> */}
+      {/* <ArrayMap/> */}
+      {/* <IncDec/> */}
+    {/* <RecatHook/>
     <Bootstrap1/> */}
     </div>
   );
