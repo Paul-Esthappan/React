@@ -25,13 +25,26 @@ function KeralaTourism() {
 {img:'https://www.keralatourism.org/images/homecontentimage/desktop/cusine4.jpg'},
 {img:'https://www.keralatourism.org/images/homecontentimage/desktop/kathakali1.jpg'}]
 
+
+const destination=[{img:'https://www.keralatourism.org/images/homecontentimage/desktop/padmanabhaswami.jpg'},
+{img:'https://www.keralatourism.org/images/homecontentimage/desktop/Veli_Tourist_Village.jpg'},
+{img:'https://www.keralatourism.org/images/homecontentimage/desktop/Munroe_Island-04.jpg'},
+{img:'https://www.keralatourism.org/images/homecontentimage/desktop/agasthyakoodam-011.jpg'},
+]
+
+const destination2=[{img:'https://www.keralatourism.org/images/homecontentimage/desktop/palaruvi-04.jpg'},
+{img:'https://www.keralatourism.org/images/homecontentimage/desktop/Payyambalam_Beach-021.jpg'},
+{img:'https://www.keralatourism.org/images/homecontentimage/desktop/Chimmini_Wildlife_Sanctuary_2.jpg'},
+{img:'https://www.keralatourism.org/images/homecontentimage/desktop/Krishnapuram_Palace_2.jpg'}]
+
+
   return (
     <div>
       <nav className='topNav'><p>Visit since 1 April 2023 <BsFillCaretRightFill/>{visits} 10191</p>
       <span><label id='toplabel1' htmlFor="">English</label></span>
       <span><label id='toplabel2' htmlFor="">Language </label></span>
       </nav>
-
+ 
       <nav className='nav1'>
         <span>
         <img src="https://www.keralatourism.org/images/kt/kerala-tourism-title.png?d=18122017" alt="Kerala Tourism" style={{width:'200px', display:'flex', paddingTop:'10px', paddingBottom:'10px', paddingRight:'10px', paddingLeft:'10px'}} />
@@ -46,7 +59,7 @@ function KeralaTourism() {
             <a className='navfond' href="#action1">TRAVEL CARE</a>
             <a className='navfond' href="#action2">E BROCHURES</a>
             <a className='navfond' href="#action2">E NEWSLETTER</a>
-            <a href="#"></a><FaSearch style={{color:"white",  alignItems:'center'}}/>
+            <a className='navfond' href="#"><FaSearch style={{color:"white",  alignItems:'center'}}/></a>
           
         </span>
       </nav>
@@ -115,98 +128,39 @@ function KeralaTourism() {
     </div>
     <div>
       <nav><h1>Top Destnations</h1></nav>
-      <nav><CardGroup>
-        <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural lead-in
-              to additional content. This content is a little bit longer.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-        <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to
-              additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-        <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural lead-in
-              to additional content. This card has even longer content than the
-              first to show that equal height action.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-      </CardGroup></nav>
       <nav>
+        <CardGroup>
+      {destination.map((dis)=>
+        <Card>
+        
+          <Card.Img variant="top" src={dis.img} />
+          <Card.Body>
+            
+            <Card.Title>Card title</Card.Title>
+            
+          </Card.Body>
+          
+        </Card>
+        )}
+      </CardGroup>
+
       <CardGroup>
+      {destination2.map((dis)=>
         <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
+        
+          <Card.Img variant="top" src={dis.img} />
           <Card.Body>
+            
             <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural lead-in
-              to additional content. This content is a little bit longer.
-            </Card.Text>
+            
           </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
+          
         </Card>
-        <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to
-              additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-        <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural lead-in
-              to additional content. This card has even longer content than the
-              first to show that equal height action.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
+        )}
       </CardGroup>
       </nav>
-
     </div>
-  );
-}
 
-export default CarouselFadeExample;
  
     </div>
   )

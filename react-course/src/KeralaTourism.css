@@ -7,9 +7,8 @@
     background-color: darkblue;
     color: white;
     padding-bottom: 0px;
-    font-size: 8px;
-
-
+    font-size: small;
+    max-height: 25px;
     
 }
 
@@ -30,7 +29,10 @@
 
 .navfond{
     color: white;
-    font-size: 10px;
+    font-size: medium;
+    text-decoration: none;
+    padding: 8px;
+    font-weight: 400;
     
 }
 
@@ -41,13 +43,12 @@
     align-items: center;
     position: relative;
     justify-content: space-between;
+    max-height: 60px;
 
 }
-a{
-    text-decoration: none;
-    padding: 8px;
-    font-weight: 700;
-}
+
 .tab1{
-    padding-top: 60px;
+   display: flex;
+   bottom: -15px;
+   position: relative;
 }
