@@ -31,14 +31,33 @@ function KeralaTourism() {
       <span><label id='toplabel1' htmlFor="">English</label></span>
       <span><label id='toplabel2' htmlFor="">Language </label></span>
       </nav>
+
+      <nav className='nav1'>
+        <span>
+        <img src="https://www.keralatourism.org/images/kt/kerala-tourism-title.png?d=18122017" alt="Kerala Tourism" style={{width:'200px', display:'flex', paddingTop:'10px', paddingBottom:'10px', paddingRight:'10px', paddingLeft:'10px'}} />
+
+        </span>
+        <span className='tab1'>
+            <a className='navfond' href="#action1">EXPERIENCE KERALA</a>
+            <a className='navfond' href="#action2">WHERE TO GO</a>
+            <a className='navfond' href="#action1">WHERE TO STAY</a>
+            <a className='navfond' href="#action1">THINGS TO DO</a>
+            <a className='navfond' href="#action2">PLAN YOUR TRIP</a>
+            <a className='navfond' href="#action1">TRAVEL CARE</a>
+            <a className='navfond' href="#action2">E BROCHURES</a>
+            <a className='navfond' href="#action2">E NEWSLETTER</a>
+            <a href="#"></a><FaSearch style={{color:"white",  alignItems:'center'}}/>
+          
+        </span>
+      </nav>
    
-       <Navbar  expand="lg" style={{backgroundColor:'darkblue',paddingTop:'0px' }}>
+       {/* <Navbar expand="lg" style={{backgroundColor:'darkblue',paddingTop:'0px' }}>
        <img src="https://www.keralatourism.org/images/kt/kerala-tourism-title.png?d=18122017" alt="Kerala Tourism" style={{width:'200px', display:'flex', paddingTop:'10px', paddingBottom:'10px', paddingRight:'10px', paddingLeft:'10px'}} />
       <Container fluid >
         
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '75px', paddingTop:'50px', paddingRight:'3px', justifyContent:'right'}}>
+          <Nav className="me-auto my-2 my-lg-0 nav1" style={{maxHeight: '75px', paddingTop:'50px', paddingRight:'3px'}}>
             <Nav.Link className='navfond' href="#action1">EXPERIENCE KERALA</Nav.Link>
             <Nav.Link className='navfond' href="#action2">WHERE TO GO</Nav.Link>
             <Nav.Link className='navfond' href="#action1">WHERE TO STAY</Nav.Link>
@@ -48,13 +67,13 @@ function KeralaTourism() {
             <Nav.Link className='navfond' href="#action2">E BROCHURES</Nav.Link>
             <Nav.Link className='navfond' href="#action2">E NEWSLETTER</Nav.Link>
              
-            <Nav.Link href="#" disabled>
-            <FaSearch style={{color:"white"}}/>
+            <Nav.Link href="#" disabled style={{paddingBottom:'10px'}}>
+            <FaSearch style={{color:"white",  alignItems:'center'}}/>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+    </Navbar> */}
 
 
     <Carousel fade>

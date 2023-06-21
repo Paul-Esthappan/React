@@ -13,12 +13,21 @@ import TableMap from './TableMap';
 import Ternery from './Ternery';
 import SpreadMap from './SpreadMap';
 import KeralaTourism from './KeralaTourism';
+import ArrUsestate from './ArrUsestate';
+import Destructureing from './Destructureing';
+import Props from './Props';
+
+
 
 
 
 function App() {
   return (
     <div className="App">
+      {/* <Props/> */}
+      {/* <Destructureing/> */}
+      {/* <Tablearray/> */}
+      {/* <ArrUsestate/> */}
       {/* <IncDec2/> */}
       {/* <SnippTask2/>
       <SnippetTex/> */}

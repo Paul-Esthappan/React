@@ -6,7 +6,8 @@
     text-align: center;
     background-color: darkblue;
     color: white;
-    height: 30px;
+    padding-bottom: 0px;
+    font-size: 8px;
 
 
     
@@ -30,4 +31,23 @@
 .navfond{
     color: white;
     font-size: 10px;
+    
+}
+
+.nav1{
+    padding-top: 0px;
+    background-color: darkblue;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+
+}
+a{
+    text-decoration: none;
+    padding: 8px;
+    font-weight: 700;
+}
+.tab1{
+    padding-top: 60px;
 }
