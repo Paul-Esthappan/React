@@ -16,7 +16,10 @@ import KeralaTourism from './KeralaTourism';
 import ArrUsestate from './ArrUsestate';
 import Destructureing from './Destructureing';
 import Props from './Props';
-
+import Props3 from './Props3';
+import UseEffectHook from './UseEffectHook';
+import ApidataTask from './ApidataTask';
+// import Api from './Api';
 
 
 
@@ -24,6 +27,10 @@ import Props from './Props';
 function App() {
   return (
     <div className="App">
+      {/* <Props3/> */}
+      <ApidataTask/>
+      {/* <Api/> */}
+      {/* <UseEffectHook/> */}
       {/* <Props/> */}
       {/* <Destructureing/> */}
       {/* <Tablearray/> */}
@@ -34,7 +41,7 @@ function App() {
       {/* <ArrayMap/> */}
       {/* <IncDec/> */}
        {/* <RecatHook/> */}
-      <KeralaTourism/>
+      {/* <KeralaTourism/> */}
       {/* <SpreadMap/> */}
       {/* <Ternery/> */}
       {/* <TableMap/> */}
