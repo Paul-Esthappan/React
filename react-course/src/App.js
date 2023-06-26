@@ -19,6 +19,9 @@ import Props from './Props';
 import Props3 from './Props3';
 import UseEffectHook from './UseEffectHook';
 import ApidataTask from './ApidataTask';
+import UseStatehookLinkPage from './UseStatehookLinkPage';
+import UseStateLinkComponent from './UseStateLinkComponent';
+import ListTask from './ListTask';
 // import Api from './Api';
 
 
@@ -27,8 +30,11 @@ import ApidataTask from './ApidataTask';
 function App() {
   return (
     <div className="App">
+      <ListTask/>
       {/* <Props3/> */}
-      <ApidataTask/>
+      {/* <ApidataTask/> */}
+      {/* <UseStatehookLinkPage/>
+      <UseStateLinkComponent/> */}
       {/* <Api/> */}
       {/* <UseEffectHook/> */}
       {/* <Props/> */}
