@@ -22,15 +22,18 @@ import ApidataTask from './ApidataTask';
 import UseStatehookLinkPage from './UseStatehookLinkPage';
 import UseStateLinkComponent from './UseStateLinkComponent';
 import ListTask from './ListTask';
+import PropTaskLink from './PropTaskLink';
+import ToggleTask from './ToggleTask';
 // import Api from './Api';
-
 
 
 
 function App() {
   return (
     <div className="App">
-      <ListTask/>
+      <ToggleTask/>
+      {/* <PropTaskLink/> */}
+      {/* <ListTask/> */}
       {/* <Props3/> */}
       {/* <ApidataTask/> */}
       {/* <UseStatehookLinkPage/>

@@ -15,6 +15,7 @@ function Props() {
         <Pro obj1={obj} arr1={arr}  />
         <Pro2 arry2={arry1} obji2 = {obji1}/>
     
+    
     </div>
   )
 }

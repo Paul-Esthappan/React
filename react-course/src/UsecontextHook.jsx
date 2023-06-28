@@ -4,7 +4,6 @@ import { createContext, useState } from "react";
 const usehook = createContext()
 
 
-
 function UsecontextHook({children}) {
     const [first, setfirst] = useState("hello")
 
@@ -14,7 +13,7 @@ function UsecontextHook({children}) {
 
   return (
     <div>
-        <usehook.Provider value={{first, setfirst, arr2, obj}}>
+        <usehook.Provider value={{first, setfirst, arr2, setarr2, obj}}>
             {children}
         </usehook.Provider>
     </div>
