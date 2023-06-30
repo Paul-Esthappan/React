@@ -7,9 +7,21 @@ function UseStatehookLinkPage() {
     const {first, setfirst, arr2, setarr2, obj} = dis
 
     const arr3 = ()=> {
-                    setarr2([...arr2, {name:"Thomas Chako"}])
-
+      
+    const updatearr = arr2.map(itm=>{
+      if (itm.name==="Tom") {
+        
+      
+      return{...itm,age:440}
+      }
+      return itm;
+      
+    })
+    setarr2(updatearr)
                    }
+
+
+                   
 
   return (
     <div>
@@ -21,7 +33,7 @@ function UseStatehookLinkPage() {
             <h3>{disp.name} {disp.age}</h3>
             )
       }
-                  <button onClick={()=>setarr2([...arr2, {name:"Thomas Chako"}])}>Thomas Chako2</button>
+                  <button onClick={()=>setarr2([{name:"Thomas Chako"}])}>Thomas Chako2</button>
         <button onClick={arr3}>Thomas Chako</button>
 
         <h1>{obj.name} {obj.age}</h1>
