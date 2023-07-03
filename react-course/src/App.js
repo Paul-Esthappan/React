@@ -25,6 +25,13 @@ import ListTask from './ListTask';
 import PropTaskLink from './PropTaskLink';
 import ToggleTask from './ToggleTask';
 import FormOnsubmit from './FormOnsubmit';
+import CountUseeffect from './CountUseeffect';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import RouterDom from './RouterDom';
+import UseNavigate from './UseNavigate';
+import WebPageRestaurant from './WebPageRestaurant';
+import Menu from './Restaurantfiles/Menu';
+
 // import Api from './Api';
 
 
@@ -32,13 +39,44 @@ import FormOnsubmit from './FormOnsubmit';
 function App() {
   return (
     <div className="App">
+
+{/* ********* Restaurant ***************/}
+
+<BrowserRouter>
+<Routes>
+  <Route path='/' element={<WebPageRestaurant/>}/>
+  <Route path='Home' element={<WebPageRestaurant/>}/>
+  <Route path='Menu' element={<Menu/>}/>
+</Routes>
+</BrowserRouter>
+
+
+{/* ********* Restaurant ***************/}
+
+
+{/* 
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<><UseNavigate/><RouterDom/></>}/>
+
+      <Route path='/ApiData' element={<> <RouterDom/><ApidataTask/> </>}/>
+      <Route path='Button' element={<ArrayMap/>}/>
+      <Route path='/ToggleTask' element={<ToggleTask/>}/>
+      <Route path='/ToggleTask1' element={<ToggleTask/>}/>
+    </Routes>
+    </BrowserRouter> */}
+
+
+
+
+      {/* <CountUseeffect/> */}
       {/* <FormOnsubmit/> */}
       {/* <ToggleTask/> */}
       {/* <PropTaskLink/> */}
       {/* <ListTask/> */}
       {/* <Props3/> */}
       {/* <ApidataTask/> */}
-      <UseStatehookLinkPage/>
+      {/* <UseStatehookLinkPage/> */}
       {/* <UseStateLinkComponent/> */}
       {/* <Api/> */}
       {/* <UseEffectHook/> */}
