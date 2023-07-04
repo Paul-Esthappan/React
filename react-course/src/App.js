@@ -25,6 +25,7 @@ import ListTask from './ListTask';
 import PropTaskLink from './PropTaskLink';
 import ToggleTask from './ToggleTask';
 import FormOnsubmit from './FormOnsubmit';
+import UseEffectContex from './UseEffectContex';
 // import Api from './Api';
 
 
@@ -32,13 +33,14 @@ import FormOnsubmit from './FormOnsubmit';
 function App() {
   return (
     <div className="App">
+      <UseEffectContex/>
       {/* <FormOnsubmit/> */}
       {/* <ToggleTask/> */}
       {/* <PropTaskLink/> */}
       {/* <ListTask/> */}
       {/* <Props3/> */}
       {/* <ApidataTask/> */}
-      <UseStatehookLinkPage/>
+      {/* <UseStatehookLinkPage/> */}
       {/* <UseStateLinkComponent/> */}
       {/* <Api/> */}
       {/* <UseEffectHook/> */}
