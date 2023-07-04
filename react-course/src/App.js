@@ -25,17 +25,19 @@ import ListTask from './ListTask';
 import PropTaskLink from './PropTaskLink';
 import ToggleTask from './ToggleTask';
 import FormOnsubmit from './FormOnsubmit';
-<<<<<<< HEAD
+
 import UseEffectContex from './UseEffectContex';
-=======
+
 import CountUseeffect from './CountUseeffect';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import RouterDom from './RouterDom';
 import UseNavigate from './UseNavigate';
 import WebPageRestaurant from './WebPageRestaurant';
 import Menu from './Restaurantfiles/Menu';
+import NavScrollExample from './Restaurantfiles/NavScrollExample';
+import Starters from './Restaurantfiles/Starters';
 
->>>>>>> 9286878a80b20dff9af545c4f26855fb3017323c
+
 // import Api from './Api';
 
 
@@ -43,9 +45,8 @@ import Menu from './Restaurantfiles/Menu';
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
-      <UseEffectContex/>
-=======
+
+      {/* <UseEffectContex/> */}
 
 {/* ********* Restaurant ***************/}
 
@@ -53,7 +54,8 @@ function App() {
 <Routes>
   <Route path='/' element={<WebPageRestaurant/>}/>
   <Route path='Home' element={<WebPageRestaurant/>}/>
-  <Route path='Menu' element={<Menu/>}/>
+  <Route path='Menu' element={ <><NavScrollExample/><Menu/></>}/>
+  <Route path='Menu/Starters' element={<Starters/>}/>
 </Routes>
 </BrowserRouter>
 
@@ -77,7 +79,7 @@ function App() {
 
 
       {/* <CountUseeffect/> */}
->>>>>>> 9286878a80b20dff9af545c4f26855fb3017323c
+
       {/* <FormOnsubmit/> */}
       {/* <ToggleTask/> */}
       {/* <PropTaskLink/> */}
