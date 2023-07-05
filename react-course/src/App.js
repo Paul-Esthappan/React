@@ -36,6 +36,7 @@ import WebPageRestaurant from './WebPageRestaurant';
 import Menu from './Restaurantfiles/Menu';
 import NavScrollExample from './Restaurantfiles/NavScrollExample';
 import Starters from './Restaurantfiles/Starters';
+import UseParmsHook from './UseParmsHook';
 
 
 // import Api from './Api';
@@ -46,18 +47,25 @@ function App() {
   return (
     <div className="App">
 
+      <BrowserRouter>
+        <Routes>
+          <Route path='/:username' element={<UseParmsHook/>}/>
+        </Routes>
+      </BrowserRouter>
+      
+
       {/* <UseEffectContex/> */}
 
 {/* ********* Restaurant ***************/}
-
+{/* 
 <BrowserRouter>
 <Routes>
   <Route path='/' element={<WebPageRestaurant/>}/>
   <Route path='Home' element={<WebPageRestaurant/>}/>
   <Route path='Menu' element={ <><NavScrollExample/><Menu/></>}/>
-  <Route path='Menu/Starters' element={<Starters/>}/>
+  <Route path='Menu/Starters' element={<><NavScrollExample/><Starters/></>}/>
 </Routes>
-</BrowserRouter>
+</BrowserRouter> */}
 
 
 {/* ********* Restaurant ***************/}
