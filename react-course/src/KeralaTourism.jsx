@@ -69,7 +69,7 @@ const destination2=[{img:'https://www.keralatourism.org/images/homecontentimage/
       <Container fluid >
         
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+        <aNavbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0 nav1" style={{maxHeight: '75px', paddingTop:'50px', paddingRight:'3px'}}>
             <Nav.Link className='navfond' href="#action1">EXPERIENCE KERALA</Nav.Link>
             <Nav.Link className='navfond' href="#action2">WHERE TO GO</Nav.Link>

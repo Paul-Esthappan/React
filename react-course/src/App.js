@@ -47,17 +47,17 @@ function App() {
   return (
     <div className="App">
 
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path='/:username' element={<UseParmsHook/>}/>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
       
 
       {/* <UseEffectContex/> */}
 
 {/* ********* Restaurant ***************/}
-{/* 
+
 <BrowserRouter>
 <Routes>
   <Route path='/' element={<WebPageRestaurant/>}/>
@@ -65,7 +65,7 @@ function App() {
   <Route path='Menu' element={ <><NavScrollExample/><Menu/></>}/>
   <Route path='Menu/Starters' element={<><NavScrollExample/><Starters/></>}/>
 </Routes>
-</BrowserRouter> */}
+</BrowserRouter>
 
 
 {/* ********* Restaurant ***************/}
